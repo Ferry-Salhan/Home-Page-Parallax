@@ -1,22 +1,19 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+//import { Player } from "video-react";
+//import logo from './logo.svg';
+//import './App.css';
+import Video from "./Components/Video";
+import SlideShow from "./Components/SlideShow";
 
-// layouts
-import LandingPageLayout from './layouts/LandingPage';
 
-// pages
-import HomePage from './pages/HomePage';
-
-const App = () => {
+function App() {
   return (
-    <Switch>
-      <Route path="/">
-        <LandingPageLayout heading="Tailwind CSS">
-          <HomePage />
-        </LandingPageLayout>
-      </Route>   
-    </Switch>
+    <>
+    
+    <Video />  
+  
+     </>
   );
-};
+}
 
 export default App;
